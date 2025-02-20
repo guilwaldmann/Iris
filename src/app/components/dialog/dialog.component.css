@@ -1,0 +1,14 @@
+mat-dialog-content {
+    overflow-y: hidden;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 24px;
+}
+
+button {
+    margin-top: 12px;
+}

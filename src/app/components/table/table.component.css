@@ -1,0 +1,28 @@
+.content {
+    width: 600px;
+    height: 400px;
+    border-radius: 8px;
+    background-color: #FAFAFC;
+    padding: 8px;
+}
+
+.table-head {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 12px;
+}
+
+.table-body {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    padding: 8px;
+    padding-top: 16px;
+    height: 84%;
+    overflow-y: auto;
+}
+
+.icon {
+    color: var(--primary-color);
+}
+

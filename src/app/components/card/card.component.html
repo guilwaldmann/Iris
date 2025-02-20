@@ -1,0 +1,17 @@
+<div class="section" *ngFor="let user of users">
+    <div class="content">
+        <div class="card-data">
+            <span>{{ user.name }}</span>
+            <span>{{ user.email }}</span>
+        </div>
+        <div class="actions">
+            <button id="update-button" (click)="openDialog(user)">
+                Editar
+            </button>
+            <button id="delete-button">
+                Delete
+            </button>
+        </div>
+    </div>
+    <div class="line"></div>
+</div>

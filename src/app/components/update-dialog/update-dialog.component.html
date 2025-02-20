@@ -1,0 +1,39 @@
+<mat-dialog-content>
+  <form>
+    <mat-form-field hintLabel="Mínimo 3 caracteres">
+      <mat-label>Nome</mat-label>
+      <input
+        matInput  
+        type="text"
+        placeholder="Nome"
+        value={{data.name}}
+        required
+      />
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input
+        matInput
+        placeholder="email@email.com"
+        [formControl]="email"
+        (blur)="updateErrorMessage()"
+        value={{data.email}}
+        required
+      />
+      @if (email.invalid) {
+        <mat-error>{{errorMessage()}}</mat-error>
+      }
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Idade</mat-label>
+      <input
+        matInput  
+        type="number"
+        placeholder="Idade"
+        value={{data.age}} 
+        required
+      />
+    </mat-form-field>
+    <button mat-flat-button type="submit">Confirmar</button>
+  </form>
+</mat-dialog-content>

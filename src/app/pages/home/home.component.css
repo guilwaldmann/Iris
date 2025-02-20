@@ -1,0 +1,11 @@
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 16px;
+    background-color: #FFFFFF;
+    padding: 32px;
+    border-radius: 8px;
+}
