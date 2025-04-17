@@ -25,7 +25,7 @@ export class UsersSearchService {
     const inputValue = (event.target as HTMLInputElement).value
 
     const filteredUsers = this.users.filter((user) => {
-      user.name.toLowerCase().includes(inputValue.toLowerCase()) || user.email.toLowerCase().includes(inputValue.toLowerCase())
+      return user.name.toLowerCase().includes(inputValue.toLowerCase()) || user.email.toLowerCase().includes(inputValue.toLowerCase())
     })
     
     this.users = filteredUsers
